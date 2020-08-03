@@ -182,11 +182,6 @@ void GreeterWorkek::onUserAdded(const QString &user)
         if (m_model->userList().isEmpty() ||
                 m_model->userList().first()->type() == User::ADDomain) {
             m_model->setCurrentUser(user_ptr);
-
-            if (m_model->currentType() == SessionBaseModel::AuthType::LightdmType) {
-                qDebug() << "Request Auth_GreeterWorkek::onUserAdded -- User added" << user_ptr->name();
-                userAuthForLightdm(user_ptr);
-            }
         }
     }
 
@@ -380,7 +375,7 @@ void GreeterWorkek::authenticationComplete()
     emit requestUpdateBackground(m_model->currentUser()->desktopBackgroundPath());
 
 #ifndef DISABLE_LOGIN_ANI
-    QTimer::singleShot(1000, this, startSessionSync);
+    QTimer::singleShot(1200, this, startSessionSync);
 #else
     startSessionSync();
 #endif
