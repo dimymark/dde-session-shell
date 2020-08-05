@@ -305,8 +305,6 @@ void GreeterWorkek::authenticationComplete()
 {
     qDebug() << "authentication complete, authenticated " << m_greeter->isAuthenticated();
 
-    m_authenticating = false;
-
     if (m_greeter->isAuthenticated()) {
         if (m_showAuthResult) {
             // s5一键开机登陆时需要显示认证成功
@@ -322,6 +320,7 @@ void GreeterWorkek::authenticationComplete()
     }
 
     if (!m_greeter->isAuthenticated()) {
+        m_authenticating = false;
         if (m_password.isEmpty()) {
             qDebug() << "Request GreeterWorkek::authenticationComplete -- fingerprint auth fail" << m_model->currentUser()->name();
             resetLightdmAuth(m_model->currentUser(), 100, false);
@@ -369,6 +368,7 @@ void GreeterWorkek::authenticationComplete()
         m_lockInter->SwitchToUser(QString(QJsonDocument(json).toJson(QJsonDocument::Compact))).waitForFinished();
 
         m_greeter->startSessionSync(m_model->sessionKey());
+        m_authenticating = false;
     };
 
     // NOTE(kirigaya): It is not necessary to display the login animation.
