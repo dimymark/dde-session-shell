@@ -24,24 +24,31 @@
  */
 
 #include "keyboardplantform_wayland.h"
+#include "keyboardplantform_wayland_p.h"
 
 #include <stdio.h>
 #include <stdlib.h>
 
 KeyboardPlantformWayland::KeyboardPlantformWayland(QObject *parent)
     : KeyBoardPlatform(parent)
+    , d(new KeyboardPlantformWaylandPrivate(this))
 {
 
+}
+
+KeyboardPlantformWayland::~KeyboardPlantformWayland()
+{
+    d->destroy();
 }
 
 bool KeyboardPlantformWayland::isCapslockOn()
 {
-    return false;
+    return KeyboardPlantformWaylandPrivate::isCapslockOn();
 }
 
 bool KeyboardPlantformWayland::isNumlockOn()
 {
-    return false;
+    return KeyboardPlantformWaylandPrivate::isNumlockOn();
 }
 
 bool KeyboardPlantformWayland::setNumlockStatus(const bool &on)
@@ -52,4 +59,5 @@ bool KeyboardPlantformWayland::setNumlockStatus(const bool &on)
 
 void KeyboardPlantformWayland::run()
 {
+
 }

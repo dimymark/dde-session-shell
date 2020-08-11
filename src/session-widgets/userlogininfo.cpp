@@ -26,6 +26,8 @@
 #include "sessionbasemodel.h"
 #include "userframelist.h"
 #include "src/global_util/constants.h"
+#include "src/global_util/keyboardmonitor.h"
+
 #include <QKeyEvent>
 
 UserLoginInfo::UserLoginInfo(SessionBaseModel *model, QObject *parent)
@@ -125,17 +127,10 @@ void UserLoginInfo::initConnect()
     connect(m_userFrameList, &UserFrameList::clicked, this, &UserLoginInfo::hideUserFrameList);
     connect(m_userFrameList, &UserFrameList::requestSwitchUser, this, &UserLoginInfo::receiveSwitchUser);
     connect(m_model, &SessionBaseModel::abortConfirmChanged, this, &UserLoginInfo::abortConfirm);
+    //task31393修改方案：capslock变换大小写图标
     connect(m_sessionManager,&SessionManager::LockedChanged,this,[=](bool v) {
         if (v) {
-            //锁屏变化时更新caps状态显示
-            QDBusInterface *inter =nullptr;
-            inter = new QDBusInterface("com.deepin.daemon.Keybinding",
-                                            "/com/deepin/daemon/Keybinding",
-                                                "com.deepin.daemon.Keybinding",
-                                                    QDBusConnection::sessionBus(),this);
-            QDBusReply<qint32> reply = inter->call("GetCapsLockState");
-            m_userLoginWidget->capslockStatusChanged(reply.value()==1 ? true : false);
-            inter->deleteLater();
+            m_userLoginWidget->capslockStatusChanged(KeyboardMonitor::instance()->isCapslockOn());
         }
     });
 }

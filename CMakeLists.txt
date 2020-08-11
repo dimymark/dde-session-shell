@@ -24,6 +24,7 @@ find_package(DtkWidget REQUIRED)
 find_package(DtkCMake REQUIRED)
 find_package(Qt5 COMPONENTS
     Core
+    Gui
     Widgets
     Concurrent
     X11Extras
@@ -33,6 +34,7 @@ find_package(Qt5 COMPONENTS
     Svg
 REQUIRED)
 
+pkg_check_modules(WAYLAND REQUIRED wayland-client)
 pkg_check_modules(XCB_EWMH REQUIRED xcb-ewmh x11 xi xcursor xfixes xrandr xext xtst)
 pkg_check_modules(DFrameworkDBus REQUIRED dframeworkdbus)
 pkg_check_modules(QGSettings REQUIRED gsettings-qt)
@@ -122,6 +124,7 @@ set(GLOBAL_UTILS_SRCS
     ./src/global_util/keyboardplatform.h
     ./src/global_util/keyboardplantform_x11.h
     ./src/global_util/keyboardplantform_wayland.h
+    ./src/global_util/keyboardplantform_wayland_p.h
     ./src/global_util/monitor.h
     ./src/global_util/xkbparser.cpp
     ./src/global_util/dbus/dbusdisplaymanager.cpp
@@ -142,6 +145,7 @@ set(GLOBAL_UTILS_SRCS
     ./src/global_util/keyboardmonitor.cpp
     ./src/global_util/keyboardplantform_x11.cpp
     ./src/global_util/keyboardplantform_wayland.cpp
+    ./src/global_util/keyboardplantform_wayland_p.cpp
     ./src/global_util/monitor.cpp
 )
 
@@ -306,6 +310,7 @@ target_link_libraries(dde-lock PRIVATE
     ${Qt5Network_LIBRARIES}
     ${Qt5Multimedia_LIBRARIES}
     ${QGSettings_LIBRARIES}
+    ${WAYLAND_LIBRARIES}
 )
 
 add_executable(
@@ -338,6 +343,7 @@ target_link_libraries(dde-shutdown PRIVATE
     ${Qt5Network_LIBRARIES}
     ${Qt5Multimedia_LIBRARIES}
     ${QGSettings_LIBRARIES}
+    ${WAYLAND_LIBRARIES}
 )
 
 add_executable(
@@ -376,6 +382,7 @@ target_link_libraries(lightdm-deepin-greeter PRIVATE
     ${Qt5Multimedia_LIBRARIES}
     ${QGSettings_LIBRARIES}
     ${Greeter_LIBRARIES}
+    ${WAYLAND_LIBRARIES}
 )
 
 # Install settings

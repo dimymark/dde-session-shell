@@ -30,12 +30,14 @@
 
 DGUI_USE_NAMESPACE
 
+KeyboardMonitor *KeyboardMonitor::keyboardMonitorInstance = nullptr;
+
 KeyboardMonitor::KeyboardMonitor() : QThread()
 {
     if(DGuiApplicationHelper::isXWindowPlatform()) {
-        keyBoardPlatform = new KeyboardPlantformX11();
+        keyBoardPlatform = new KeyboardPlantformX11(this);
     } else {
-        keyBoardPlatform = new KeyboardPlantformWayland();
+        keyBoardPlatform = new KeyboardPlantformWayland(this);
     }
 
     connect(keyBoardPlatform, &KeyBoardPlatform::capslockStatusChanged, this, &KeyboardMonitor::capslockStatusChanged);
@@ -44,13 +46,18 @@ KeyboardMonitor::KeyboardMonitor() : QThread()
 
 KeyboardMonitor *KeyboardMonitor::instance()
 {
-    static KeyboardMonitor *KeyboardMonitorInstance = nullptr;
-
-    if (!KeyboardMonitorInstance) {
-        KeyboardMonitorInstance = new KeyboardMonitor;
+    if (!keyboardMonitorInstance) {
+        keyboardMonitorInstance = new KeyboardMonitor;
     }
 
-    return KeyboardMonitorInstance;
+    return keyboardMonitorInstance;
+}
+
+KeyboardMonitor::~KeyboardMonitor()
+{
+    if(keyboardMonitorInstance != nullptr){
+        keyboardMonitorInstance->deleteLater();
+    }
 }
 
 bool KeyboardMonitor::isCapslockOn()

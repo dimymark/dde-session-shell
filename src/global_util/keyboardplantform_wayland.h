@@ -24,6 +24,7 @@
 
 #include "keyboardplatform.h"
 
+class KeyboardPlantformWaylandPrivate;
 class KeyboardPlantformWayland : public KeyBoardPlatform
 {
     Q_OBJECT
@@ -31,16 +32,17 @@ class KeyboardPlantformWayland : public KeyBoardPlatform
 public:
     KeyboardPlantformWayland(QObject *parent = nullptr);
 
+    ~KeyboardPlantformWayland() override;
+
     bool isCapslockOn() override;
     bool isNumlockOn() override;
     bool setNumlockStatus(const bool &on) override;
 
-signals:
-    void capslockStatusChanged(bool on);
-    void numlockStatusChanged(bool on);
-
 protected:
     void run() Q_DECL_OVERRIDE;
+
+private:
+    QScopedPointer<KeyboardPlantformWaylandPrivate> d;
 };
 
 #endif // KEYBOARDPLANTFORM_WAYLAND_H

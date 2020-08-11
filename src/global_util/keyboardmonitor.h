@@ -37,6 +37,7 @@ class KeyboardMonitor : public QThread
     Q_OBJECT
 public:
     static KeyboardMonitor *instance();
+    ~KeyboardMonitor();
 
     bool isCapslockOn();
     bool isNumlockOn();
@@ -52,6 +53,7 @@ protected:
 private:
     KeyboardMonitor();
     KeyBoardPlatform* keyBoardPlatform = nullptr;
+    static KeyboardMonitor *keyboardMonitorInstance;
 };
 
 #endif // KEYBOARDMONITOR_H
