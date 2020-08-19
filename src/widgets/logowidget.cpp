@@ -87,13 +87,8 @@ void LogoWidget::initUI() {
 QString LogoWidget::getVersion() {
     QString version;
     if (DSysInfo::isDeepin()) {
-        //针对个人版本修改:当显示为Personal时,强制修改为home
-        QString versionType = DSysInfo::deepinTypeDisplayName(m_locale);
-        if ( versionType == "Personal" ) 
-            versionType = "Home";
-
-        version = QString("%1 %2").arg(DSysInfo::deepinVersion())
-                                  .arg(versionType);
+        version = QString("%1 %2").arg(DSysInfo::majorVersion())
+                                  .arg(DSysInfo::uosEditionName());
     } else {
         version = QString("%1 %2").arg(DSysInfo::productVersion())
                                   .arg(DSysInfo::productTypeString());
