@@ -61,7 +61,7 @@ void DeepinAuthFramework::Authenticate(std::shared_ptr<User> user)
         m_authThread->start();
     }
 
-    QTimer::singleShot(100, m_authagent, [ = ]() {
+    QTimer::singleShot(10, m_authagent, [ = ]() {
         m_authagent->Authenticate(user->name());
     });
 }
