@@ -55,7 +55,7 @@
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="387"/>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="578"/>
         <source>Suspend</source>
-        <translation>Energie sparen</translation>
+        <translation>Bereitschaftszustand</translation>
     </message>
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="389"/>
@@ -111,7 +111,7 @@
     <message>
         <location filename="../src/lightdm-deepin-greeter/greeterworkek.cpp" line="311"/>
         <source>The account or password is not correct. Please enter again.</source>
-        <translation type="unfinished"/>
+        <translation>Das Konto oder Passwort ist nicht korrekt. Bitte erneut eingeben.</translation>
     </message>
 </context>
 <context>
@@ -188,7 +188,7 @@
         <location filename="../src/widgets/shutdownwidget.cpp" line="31"/>
         <location filename="../src/widgets/shutdownwidget.cpp" line="108"/>
         <source>Suspend</source>
-        <translation>Energie sparen</translation>
+        <translation>Bereitschaftszustand</translation>
     </message>
     <message>
         <location filename="../src/widgets/shutdownwidget.cpp" line="32"/>
@@ -230,7 +230,7 @@
     <message>
         <location filename="../src/session-widgets/userexpiredwidget.cpp" line="336"/>
         <source>Password too weak</source>
-        <translation>Das Passwort ist zu schwach.</translation>
+        <translation>Passwort zu schwach</translation>
     </message>
     <message>
         <location filename="../src/session-widgets/userexpiredwidget.cpp" line="344"/>
@@ -269,7 +269,7 @@
     <message>
         <location filename="../src/session-widgets/userloginwidget.cpp" line="248"/>
         <source>Please enter the account</source>
-        <translation>Bitte geben Sie den Account-namen ein</translation>
+        <translation>Bitte geben Sie den Kontonamen ein</translation>
     </message>
     <message>
         <location filename="../src/session-widgets/userloginwidget.cpp" line="255"/>
@@ -279,7 +279,7 @@
     <message numerus="yes">
         <location filename="../src/session-widgets/userloginwidget.cpp" line="333"/>
         <source>Please try again %n minute(s) later</source>
-        <translation><numerusform>Bitte in %n Minute(n) erneut versuchen</numerusform><numerusform>Bitte in %n Minute(n) erneut versuchen</numerusform></translation>
+        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
 </context>
 </TS>

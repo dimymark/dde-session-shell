@@ -98,7 +98,7 @@
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="596"/>
         <source>Switch system</source>
-        <translation type="unfinished"/>
+        <translation>Vaihda järjestelmää</translation>
     </message>
 </context>
 <context>
@@ -111,7 +111,7 @@
     <message>
         <location filename="../src/lightdm-deepin-greeter/greeterworkek.cpp" line="311"/>
         <source>The account or password is not correct. Please enter again.</source>
-        <translation type="unfinished"/>
+        <translation>Tili tai salasana ei ole oikea. Kirjoita uudelleen.</translation>
     </message>
 </context>
 <context>
@@ -279,7 +279,7 @@
     <message numerus="yes">
         <location filename="../src/session-widgets/userloginwidget.cpp" line="333"/>
         <source>Please try again %n minute(s) later</source>
-        <translation><numerusform>Yritä uudelleen %n minute(s)</numerusform><numerusform>Yritä uudelleen %n minute(s)</numerusform></translation>
+        <translation><numerusform>Yritä uudelleen %n minuuttia myöhemmin</numerusform><numerusform>Yritä uudelleen %n minuuttia myöhemmin</numerusform></translation>
     </message>
 </context>
 </TS>

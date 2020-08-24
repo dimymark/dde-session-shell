@@ -279,7 +279,7 @@
     <message numerus="yes">
         <location filename="../src/session-widgets/userloginwidget.cpp" line="333"/>
         <source>Please try again %n minute(s) later</source>
-        <translation><numerusform>Po %n minutės, bandykite dar kartą</numerusform><numerusform>Po %n minučių, bandykite dar kartą</numerusform><numerusform>Po %n minučių, bandykite dar kartą</numerusform><numerusform>Po %n minutės, bandykite dar kartą</numerusform></translation>
+        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
 </context>
 </TS>

@@ -98,7 +98,7 @@
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="596"/>
         <source>Switch system</source>
-        <translation type="unfinished"/>
+        <translation>Rendszer váltása</translation>
     </message>
 </context>
 <context>
@@ -111,7 +111,7 @@
     <message>
         <location filename="../src/lightdm-deepin-greeter/greeterworkek.cpp" line="311"/>
         <source>The account or password is not correct. Please enter again.</source>
-        <translation type="unfinished"/>
+        <translation>A fióknév vagy a jelszó helytelen. Kérem, próbálja újra.</translation>
     </message>
 </context>
 <context>
@@ -127,7 +127,7 @@
     <message>
         <location filename="../src/session-widgets/lockcontent.cpp" line="352"/>
         <source>Lock Screen</source>
-        <translation type="unfinished"/>
+        <translation>Képernyő zárolása</translation>
     </message>
     <message>
         <location filename="../src/session-widgets/lockcontent.cpp" line="356"/>
@@ -230,7 +230,7 @@
     <message>
         <location filename="../src/session-widgets/userexpiredwidget.cpp" line="336"/>
         <source>Password too weak</source>
-        <translation type="unfinished"/>
+        <translation>Jelszó túl gyenge</translation>
     </message>
     <message>
         <location filename="../src/session-widgets/userexpiredwidget.cpp" line="344"/>
@@ -269,17 +269,17 @@
     <message>
         <location filename="../src/session-widgets/userloginwidget.cpp" line="248"/>
         <source>Please enter the account</source>
-        <translation type="unfinished"/>
+        <translation>Kérem, írja be a fióknevet</translation>
     </message>
     <message>
         <location filename="../src/session-widgets/userloginwidget.cpp" line="255"/>
         <source>Please enter the password</source>
-        <translation type="unfinished"/>
+        <translation>Kérem, adja meg a jelszót</translation>
     </message>
     <message numerus="yes">
         <location filename="../src/session-widgets/userloginwidget.cpp" line="333"/>
         <source>Please try again %n minute(s) later</source>
-        <translation><numerusform>Kérem, próbálja újra %n perc múlva</numerusform><numerusform>Kérem, próbálja újra %n perc múlva</numerusform></translation>
+        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
 </context>
 </TS>

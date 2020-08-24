@@ -106,7 +106,7 @@
     <message>
         <location filename="../src/lightdm-deepin-greeter/greeterworkek.cpp" line="306"/>
         <source>Wrong Password</source>
-        <translation>رمزعبور اشتباه</translation>
+        <translation>رمزعبور اشتباه است</translation>
     </message>
     <message>
         <location filename="../src/lightdm-deepin-greeter/greeterworkek.cpp" line="311"/>
@@ -145,7 +145,7 @@
     <message>
         <location filename="../src/dde-lock/lockworker.cpp" line="253"/>
         <source>Failed to match fingerprint</source>
-        <translation>تطابق اثر انگشت ناموفق بود.</translation>
+        <translation>تطابق اثر انگشت ناموفق بود</translation>
     </message>
     <message>
         <location filename="../src/dde-lock/lockworker.cpp" line="288"/>
@@ -245,7 +245,7 @@
     <message>
         <location filename="../src/session-widgets/userexpiredwidget.cpp" line="356"/>
         <source>Passwords do not match</source>
-        <translation>رمزعبور یکسان نیست.</translation>
+        <translation>گذرواژه ها یکسان نیستند.</translation>
     </message>
 </context>
 <context>
@@ -279,7 +279,7 @@
     <message numerus="yes">
         <location filename="../src/session-widgets/userloginwidget.cpp" line="333"/>
         <source>Please try again %n minute(s) later</source>
-        <translation><numerusform>لطفاً٪ n دقیقه بعد دوباره امتحان کنید</numerusform><numerusform>لطفاً ٪n دقیقه بعد دوباره امتحان کنید</numerusform></translation>
+        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
 </context>
 </TS>

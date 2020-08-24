@@ -98,7 +98,7 @@
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="596"/>
         <source>Switch system</source>
-        <translation type="unfinished"/>
+        <translation>Sistem değiştir</translation>
     </message>
 </context>
 <context>
@@ -111,7 +111,7 @@
     <message>
         <location filename="../src/lightdm-deepin-greeter/greeterworkek.cpp" line="311"/>
         <source>The account or password is not correct. Please enter again.</source>
-        <translation type="unfinished"/>
+        <translation>Hesap veya parola doğru değil. Lütfen tekrar girin.</translation>
     </message>
 </context>
 <context>

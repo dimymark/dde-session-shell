@@ -41,7 +41,7 @@
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="442"/>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="572"/>
         <source>Shut down</source>
-        <translation>Arrêter</translation>
+        <translation>Éteindre</translation>
     </message>
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="385"/>
@@ -98,7 +98,7 @@
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="596"/>
         <source>Switch system</source>
-        <translation type="unfinished"/>
+        <translation>Système de commutation</translation>
     </message>
 </context>
 <context>
@@ -111,7 +111,7 @@
     <message>
         <location filename="../src/lightdm-deepin-greeter/greeterworkek.cpp" line="311"/>
         <source>The account or password is not correct. Please enter again.</source>
-        <translation type="unfinished"/>
+        <translation>Le compte ou le mot de passe n&apos;est pas correct. Veuillez l&apos;entrer à nouveau.</translation>
     </message>
 </context>
 <context>
@@ -163,12 +163,12 @@
     <message>
         <location filename="../src/dde-shutdown/view/multiuserswarningview.cpp" line="129"/>
         <source>The above users are still logged in and data will be lost due to shutdown, are you sure you want to shut down?</source>
-        <translation>Les utilisateurs ci-dessus sont toujours connectés, des données seront perdues si vous éteignez l&apos;ordinateur, êtes-vous sûr de vouloir poursuivre ?</translation>
+        <translation>Les utilisateurs ci-dessus sont toujours connectés, des données seront perdues si vous éteignez l&apos;ordinateur, êtes-vous sûr de vouloir poursuivre?</translation>
     </message>
     <message>
         <location filename="../src/dde-shutdown/view/multiuserswarningview.cpp" line="133"/>
         <source>The above users are still logged in and data will be lost due to reboot, are you sure you want to reboot?</source>
-        <translation>Les utilisateurs ci-dessus sont toujours connectés, des données seront perdues si vous redémarrez l&apos;ordinateur, êtes-vous sûr de vouloir poursuivre ?</translation>
+        <translation>Les utilisateurs ci-dessus sont toujours connectés, des données seront perdues si vous redémarrez l&apos;ordinateur, êtes-vous sûr de vouloir poursuivre?</translation>
     </message>
 </context>
 <context>
@@ -176,7 +176,7 @@
     <message>
         <location filename="../src/widgets/shutdownwidget.cpp" line="29"/>
         <source>Shut down</source>
-        <translation>Arrêter</translation>
+        <translation>Éteindre</translation>
     </message>
     <message>
         <location filename="../src/widgets/shutdownwidget.cpp" line="30"/>
@@ -220,7 +220,7 @@
     <message>
         <location filename="../src/session-widgets/userexpiredwidget.cpp" line="163"/>
         <source>Repeat password</source>
-        <translation>Répéter le mot de passe</translation>
+        <translation>Répétez le mot de passe</translation>
     </message>
     <message>
         <location filename="../src/session-widgets/userexpiredwidget.cpp" line="322"/>
@@ -264,7 +264,7 @@
         <location filename="../src/session-widgets/userloginwidget.cpp" line="235"/>
         <location filename="../src/session-widgets/userloginwidget.cpp" line="238"/>
         <source>Verify your fingerprint or password</source>
-        <translation>Vérifier votre empreinte digitale ou votre mot de passe</translation>
+        <translation>Vérifiez votre empreinte digitale ou votre mot de passe</translation>
     </message>
     <message>
         <location filename="../src/session-widgets/userloginwidget.cpp" line="248"/>
@@ -279,7 +279,7 @@
     <message numerus="yes">
         <location filename="../src/session-widgets/userloginwidget.cpp" line="333"/>
         <source>Please try again %n minute(s) later</source>
-        <translation><numerusform>Veuillez réessayer plus tard dans %n minute(s)</numerusform><numerusform>Veuillez réessayer plus tard dans %n minute(s)</numerusform></translation>
+        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
 </context>
 </TS>

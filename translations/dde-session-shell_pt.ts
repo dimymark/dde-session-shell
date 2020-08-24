@@ -4,7 +4,7 @@
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="348"/>
         <source>The programs are preventing the computer from shutting down, and forcing shut down may cause data loss.</source>
-        <translation>Os programas estão a impedir o computador de encerrar, e forçar o encerramento pode causar perda de dados.</translation>
+        <translation>Os programas estão a impedir que o computador encerre, e forçar o encerramento pode causar a perda de dados.</translation>
     </message>
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="349"/>
@@ -13,27 +13,27 @@
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="362"/>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="366"/>
         <source>To close the program, click Cancel, and then close the program.</source>
-        <translation>Para terminar o programa, clique em Cancelar e depois termine o programa.</translation>
+        <translation>Para fechar o programa, clique em &quot;Cancelar&quot; e depois feche o programa.</translation>
     </message>
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="353"/>
         <source>The programs are preventing the computer from reboot, and forcing reboot may cause data loss.</source>
-        <translation>Os programas estão a impedir o computador de reiniciar, e forçar o reinício pode causar perda de dados.</translation>
+        <translation>Os programas estão a impedir que o computador reinicie, e forçar o reinício pode causar a perda de dados.</translation>
     </message>
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="357"/>
         <source>The programs are preventing the computer from suspend, and forcing suspend may cause data loss.</source>
-        <translation>Os programas estão a impedir o computador de suspender, e forçar a suspensão pode causar perda de dados.</translation>
+        <translation>Os programas estão a impedir que o computador suspenda, e forçar a suspensão pode causar a perda de dados.</translation>
     </message>
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="361"/>
         <source>The programs are preventing the computer from hibernate, and forcing hibernate may cause data loss.</source>
-        <translation>Os programas estão a impedir o computador de hibernar, e forçar a hibernação pode causar perda de dados.</translation>
+        <translation>Os programas estão a impedir que o computador hiberne, e forçar a hibernação pode causar a perda de dados.</translation>
     </message>
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="365"/>
         <source>The programs are preventing the computer from log out, and forcing log out may cause data loss.</source>
-        <translation>Os programas estão a impedir o computador de terminar sessão, e forçar o saída pode causar perda de dados.</translation>
+        <translation>Os programas estão a impedir o computador de terminar sessão, e forçar a saída pode causar perda de dados.</translation>
     </message>
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="383"/>
@@ -73,12 +73,12 @@
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="443"/>
         <source>Are you sure you want to shut down?</source>
-        <translation>Tem a certeza que quer encerrar?</translation>
+        <translation>Tem a certeza que deseja encerrar?</translation>
     </message>
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="446"/>
         <source>Are you sure you want to reboot?</source>
-        <translation>Tem a certeza que quer reiniciar?</translation>
+        <translation>Tem a certeza que deseja reiniciar?</translation>
     </message>
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="449"/>
@@ -98,7 +98,7 @@
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="596"/>
         <source>Switch system</source>
-        <translation type="unfinished"/>
+        <translation>Mudar de sistema</translation>
     </message>
 </context>
 <context>
@@ -111,7 +111,7 @@
     <message>
         <location filename="../src/lightdm-deepin-greeter/greeterworkek.cpp" line="311"/>
         <source>The account or password is not correct. Please enter again.</source>
-        <translation type="unfinished"/>
+        <translation>A conta ou a palavra-passe não estão corretas. Por favor, insira novamente.</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,7 @@
     <message>
         <location filename="../src/session-widgets/lockcontent.cpp" line="356"/>
         <source>Failed to lock screen</source>
-        <translation>Falha ao bloquear o ecrã</translation>
+        <translation>O bloqueio do ecrã falhou</translation>
     </message>
 </context>
 <context>
@@ -140,12 +140,12 @@
     <message>
         <location filename="../src/dde-lock/lockworker.cpp" line="235"/>
         <source>Fingerprint verification timed out, please enter your password manually</source>
-        <translation>A verificação por impressão digital expirou o tempo, introduza a sua palavra-passe manualmente</translation>
+        <translation>A verificação da impressão digital expirou, insira manualmente a sua palavra-passe</translation>
     </message>
     <message>
         <location filename="../src/dde-lock/lockworker.cpp" line="253"/>
         <source>Failed to match fingerprint</source>
-        <translation>Falhou na correspondência de impressão digital</translation>
+        <translation>A impressão digital não coincide</translation>
     </message>
     <message>
         <location filename="../src/dde-lock/lockworker.cpp" line="288"/>
@@ -163,12 +163,12 @@
     <message>
         <location filename="../src/dde-shutdown/view/multiuserswarningview.cpp" line="129"/>
         <source>The above users are still logged in and data will be lost due to shutdown, are you sure you want to shut down?</source>
-        <translation>Os utilizadores acima ainda estão com sessão iniciada e os dados serão perdidos devido ao encerramento, tem a certeza que quer encerrar?</translation>
+        <translation>Os utilizadores acima ainda estão autenticados e os dados serão perdidos se encerrar. Tem a certeza que deseja encerrar?</translation>
     </message>
     <message>
         <location filename="../src/dde-shutdown/view/multiuserswarningview.cpp" line="133"/>
         <source>The above users are still logged in and data will be lost due to reboot, are you sure you want to reboot?</source>
-        <translation>Os utilizadores acima ainda estão com sessão iniciada e os dados serão perdidos devido ao reinício, tem a certeza que quer reiniciar?</translation>
+        <translation>Os utilizadores acima ainda estão autenticados e os dados serão perdidos se reiniciar. Tem a certeza que deseja reiniciar?</translation>
     </message>
 </context>
 <context>
@@ -210,7 +210,7 @@
     <message>
         <location filename="../src/session-widgets/userexpiredwidget.cpp" line="149"/>
         <source>Password expired, please change</source>
-        <translation>Palavra-passe expirada, altere</translation>
+        <translation>Palavra-passe expirada, por favor altere</translation>
     </message>
     <message>
         <location filename="../src/session-widgets/userexpiredwidget.cpp" line="153"/>
@@ -220,7 +220,7 @@
     <message>
         <location filename="../src/session-widgets/userexpiredwidget.cpp" line="163"/>
         <source>Repeat password</source>
-        <translation>Repita a palavra-passe</translation>
+        <translation>Repetir palavra-passe</translation>
     </message>
     <message>
         <location filename="../src/session-widgets/userexpiredwidget.cpp" line="322"/>
@@ -235,12 +235,12 @@
     <message>
         <location filename="../src/session-widgets/userexpiredwidget.cpp" line="344"/>
         <source>Please enter the new password</source>
-        <translation>Introduza a nova palavra-passe</translation>
+        <translation>Por favor, introduza a nova palavra-passe</translation>
     </message>
     <message>
         <location filename="../src/session-widgets/userexpiredwidget.cpp" line="350"/>
         <source>Please repeat the new password</source>
-        <translation>Repita a nova palavra-passe</translation>
+        <translation>Por favor, repita a nova palavra-passe</translation>
     </message>
     <message>
         <location filename="../src/session-widgets/userexpiredwidget.cpp" line="356"/>
@@ -269,17 +269,17 @@
     <message>
         <location filename="../src/session-widgets/userloginwidget.cpp" line="248"/>
         <source>Please enter the account</source>
-        <translation>Introduza a conta</translation>
+        <translation>Por favor, introduza a conta</translation>
     </message>
     <message>
         <location filename="../src/session-widgets/userloginwidget.cpp" line="255"/>
         <source>Please enter the password</source>
-        <translation>Introduza a palavra-passe</translation>
+        <translation>Por favor, introduza a palavra-passe</translation>
     </message>
     <message numerus="yes">
         <location filename="../src/session-widgets/userloginwidget.cpp" line="333"/>
         <source>Please try again %n minute(s) later</source>
-        <translation><numerusform>Tentar novamente %n minuto(s) mais tarde</numerusform><numerusform>Tentar novamente %n minuto(s) mais tarde</numerusform></translation>
+        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
 </context>
 </TS>

@@ -68,7 +68,7 @@
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="448"/>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="587"/>
         <source>Log out</source>
-        <translation>Вийти</translation>
+        <translation>Вихід</translation>
     </message>
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="443"/>
@@ -98,7 +98,7 @@
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="596"/>
         <source>Switch system</source>
-        <translation type="unfinished"/>
+        <translation>Перемкнути систему</translation>
     </message>
 </context>
 <context>
@@ -111,7 +111,7 @@
     <message>
         <location filename="../src/lightdm-deepin-greeter/greeterworkek.cpp" line="311"/>
         <source>The account or password is not correct. Please enter again.</source>
-        <translation type="unfinished"/>
+        <translation>Назва облікового запису або пароль є помилковими. Будь ласка, повторіть спробу їхнього введення.</translation>
     </message>
 </context>
 <context>
@@ -279,7 +279,7 @@
     <message numerus="yes">
         <location filename="../src/session-widgets/userloginwidget.cpp" line="333"/>
         <source>Please try again %n minute(s) later</source>
-        <translation><numerusform>Будь ласка, повторіть спробу за %n хвилину</numerusform><numerusform>Будь ласка, повторіть спробу за %n хвилини</numerusform><numerusform>Будь ласка, повторіть спробу за %n хвилин</numerusform><numerusform>Будь ласка, повторіть спробу за %n хвилину</numerusform></translation>
+        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
 </context>
 </TS>

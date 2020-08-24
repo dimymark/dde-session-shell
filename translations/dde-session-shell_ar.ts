@@ -245,7 +245,7 @@
     <message>
         <location filename="../src/session-widgets/userexpiredwidget.cpp" line="356"/>
         <source>Passwords do not match</source>
-        <translation>كلممتا المرور غير متطابقتان</translation>
+        <translation>كلمتا المرور غير متطابقتان</translation>
     </message>
 </context>
 <context>
@@ -279,7 +279,7 @@
     <message numerus="yes">
         <location filename="../src/session-widgets/userloginwidget.cpp" line="333"/>
         <source>Please try again %n minute(s) later</source>
-        <translation><numerusform>الرجاء إعادة المحاولة بعد 0 دقيقة </numerusform><numerusform>الرجاء إعادة المحاولة بعد n% دقيقة</numerusform><numerusform>الرجاء إعادة المحاولة بعد n% دقيقتان</numerusform><numerusform>الرجاء إعادة المحاولة بعد n% دقيقة(ائق)</numerusform><numerusform>الرجاء إعادة المحاولة بعد n% دقيقة(ائق)</numerusform><numerusform>الرجاء إعادة المحاولة بعد n% دقيقة(ائق)</numerusform></translation>
+        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
 </context>
 </TS>

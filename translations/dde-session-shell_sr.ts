@@ -41,7 +41,7 @@
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="442"/>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="572"/>
         <source>Shut down</source>
-        <translation>Искључи</translation>
+        <translation>Искључивање</translation>
     </message>
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="385"/>
@@ -68,7 +68,7 @@
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="448"/>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="587"/>
         <source>Log out</source>
-        <translation>Одјави се</translation>
+        <translation>Одјављивање</translation>
     </message>
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="443"/>
@@ -98,7 +98,7 @@
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="596"/>
         <source>Switch system</source>
-        <translation type="unfinished"/>
+        <translation>Промени систем</translation>
     </message>
 </context>
 <context>
@@ -111,7 +111,7 @@
     <message>
         <location filename="../src/lightdm-deepin-greeter/greeterworkek.cpp" line="311"/>
         <source>The account or password is not correct. Please enter again.</source>
-        <translation type="unfinished"/>
+        <translation>Погрешан налог или лозинка. Молимо поново унесите.</translation>
     </message>
 </context>
 <context>
@@ -176,7 +176,7 @@
     <message>
         <location filename="../src/widgets/shutdownwidget.cpp" line="29"/>
         <source>Shut down</source>
-        <translation>Искључи</translation>
+        <translation>Искључивање</translation>
     </message>
     <message>
         <location filename="../src/widgets/shutdownwidget.cpp" line="30"/>
@@ -279,7 +279,7 @@
     <message numerus="yes">
         <location filename="../src/session-widgets/userloginwidget.cpp" line="333"/>
         <source>Please try again %n minute(s) later</source>
-        <translation><numerusform>Покушајте поново за %n минут</numerusform><numerusform>Покушајте поново за %n минута</numerusform><numerusform>Покушајте поново за %n минута</numerusform></translation>
+        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
 </context>
 </TS>

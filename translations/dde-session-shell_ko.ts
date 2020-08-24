@@ -41,7 +41,7 @@
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="442"/>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="572"/>
         <source>Shut down</source>
-        <translation>종료</translation>
+        <translation>컴퓨터 끄기</translation>
     </message>
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="385"/>
@@ -55,7 +55,7 @@
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="387"/>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="578"/>
         <source>Suspend</source>
-        <translation>절전 모드</translation>
+        <translation>대기모드</translation>
     </message>
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="389"/>
@@ -98,7 +98,7 @@
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="596"/>
         <source>Switch system</source>
-        <translation type="unfinished"/>
+        <translation>전환 시스템</translation>
     </message>
 </context>
 <context>
@@ -106,12 +106,12 @@
     <message>
         <location filename="../src/lightdm-deepin-greeter/greeterworkek.cpp" line="306"/>
         <source>Wrong Password</source>
-        <translation>잘못된 비밀번호입니다</translation>
+        <translation>잘못된 비밀번호</translation>
     </message>
     <message>
         <location filename="../src/lightdm-deepin-greeter/greeterworkek.cpp" line="311"/>
         <source>The account or password is not correct. Please enter again.</source>
-        <translation type="unfinished"/>
+        <translation>계정 또는 비밀번호가 올바르지 않습니다. 다시 입력하십시오.</translation>
     </message>
 </context>
 <context>
@@ -140,12 +140,12 @@
     <message>
         <location filename="../src/dde-lock/lockworker.cpp" line="235"/>
         <source>Fingerprint verification timed out, please enter your password manually</source>
-        <translation>지문 인증 시간이 만료되었으니, 비밀번호를 직접 입력하여 주십시오</translation>
+        <translation>지문 확인 시간이 초과되었습니다. 비밀번호를 직접 입력하여 주십시오.</translation>
     </message>
     <message>
         <location filename="../src/dde-lock/lockworker.cpp" line="253"/>
         <source>Failed to match fingerprint</source>
-        <translation>지문 대조 실패</translation>
+        <translation>지문 일치 실패</translation>
     </message>
     <message>
         <location filename="../src/dde-lock/lockworker.cpp" line="288"/>
@@ -176,7 +176,7 @@
     <message>
         <location filename="../src/widgets/shutdownwidget.cpp" line="29"/>
         <source>Shut down</source>
-        <translation>종료</translation>
+        <translation>컴퓨터 끄기</translation>
     </message>
     <message>
         <location filename="../src/widgets/shutdownwidget.cpp" line="30"/>
@@ -188,7 +188,7 @@
         <location filename="../src/widgets/shutdownwidget.cpp" line="31"/>
         <location filename="../src/widgets/shutdownwidget.cpp" line="108"/>
         <source>Suspend</source>
-        <translation>절전 모드</translation>
+        <translation>대기모드</translation>
     </message>
     <message>
         <location filename="../src/widgets/shutdownwidget.cpp" line="32"/>
@@ -279,7 +279,7 @@
     <message numerus="yes">
         <location filename="../src/session-widgets/userloginwidget.cpp" line="333"/>
         <source>Please try again %n minute(s) later</source>
-        <translation><numerusform>%n분 후에 다시 시도하십시오</numerusform></translation>
+        <translation type="unfinished"><numerusform></numerusform></translation>
     </message>
 </context>
 </TS>

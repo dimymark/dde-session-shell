@@ -88,7 +88,7 @@
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="584"/>
         <source>Lock</source>
-        <translation>Bloqueja</translation>
+        <translation>Bloca</translation>
     </message>
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="591"/>
@@ -98,7 +98,7 @@
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="596"/>
         <source>Switch system</source>
-        <translation type="unfinished"/>
+        <translation>Canvia de sistema</translation>
     </message>
 </context>
 <context>
@@ -111,7 +111,7 @@
     <message>
         <location filename="../src/lightdm-deepin-greeter/greeterworkek.cpp" line="311"/>
         <source>The account or password is not correct. Please enter again.</source>
-        <translation type="unfinished"/>
+        <translation>El compte o la contrasenya no són correctes. Si us plau, torneu-hi.</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,7 @@
     <message>
         <location filename="../src/session-widgets/lockcontent.cpp" line="356"/>
         <source>Failed to lock screen</source>
-        <translation>Ha fallat bloquejar la pantalla.</translation>
+        <translation>Ha fallat blocar la pantalla.</translation>
     </message>
 </context>
 <context>
@@ -230,7 +230,7 @@
     <message>
         <location filename="../src/session-widgets/userexpiredwidget.cpp" line="336"/>
         <source>Password too weak</source>
-        <translation>La contrasenya no és prou segura</translation>
+        <translation>La contrasenya no és prou segura.</translation>
     </message>
     <message>
         <location filename="../src/session-widgets/userexpiredwidget.cpp" line="344"/>
@@ -269,17 +269,17 @@
     <message>
         <location filename="../src/session-widgets/userloginwidget.cpp" line="248"/>
         <source>Please enter the account</source>
-        <translation>Introduïu el compte</translation>
+        <translation>Si us plau, introduïu el compte.</translation>
     </message>
     <message>
         <location filename="../src/session-widgets/userloginwidget.cpp" line="255"/>
         <source>Please enter the password</source>
-        <translation>Introduïu la contrasenya</translation>
+        <translation>Si us plau, escriviu la contrasenya.</translation>
     </message>
     <message numerus="yes">
         <location filename="../src/session-widgets/userloginwidget.cpp" line="333"/>
         <source>Please try again %n minute(s) later</source>
-        <translation><numerusform>Si us plau, torneu-ho a intentar d&apos;aquí a %n minut.</numerusform><numerusform>Si us plau, torneu-ho a intentar d&apos;aquí a %n minuts.</numerusform></translation>
+        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
 </context>
 </TS>

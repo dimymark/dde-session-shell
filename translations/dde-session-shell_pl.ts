@@ -98,7 +98,7 @@
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="596"/>
         <source>Switch system</source>
-        <translation type="unfinished"/>
+        <translation>System przełączania</translation>
     </message>
 </context>
 <context>
@@ -111,7 +111,7 @@
     <message>
         <location filename="../src/lightdm-deepin-greeter/greeterworkek.cpp" line="311"/>
         <source>The account or password is not correct. Please enter again.</source>
-        <translation type="unfinished"/>
+        <translation>Konto lub hasło są nieprawidłowe. Proszę wprowadzić ponownie</translation>
     </message>
 </context>
 <context>
@@ -127,7 +127,7 @@
     <message>
         <location filename="../src/session-widgets/lockcontent.cpp" line="352"/>
         <source>Lock Screen</source>
-        <translation type="unfinished"/>
+        <translation>Zablokuj ekran</translation>
     </message>
     <message>
         <location filename="../src/session-widgets/lockcontent.cpp" line="356"/>
@@ -230,7 +230,7 @@
     <message>
         <location filename="../src/session-widgets/userexpiredwidget.cpp" line="336"/>
         <source>Password too weak</source>
-        <translation type="unfinished"/>
+        <translation>Hasło zbyt słabe</translation>
     </message>
     <message>
         <location filename="../src/session-widgets/userexpiredwidget.cpp" line="344"/>
@@ -269,17 +269,17 @@
     <message>
         <location filename="../src/session-widgets/userloginwidget.cpp" line="248"/>
         <source>Please enter the account</source>
-        <translation type="unfinished"/>
+        <translation>Proszę podać konto</translation>
     </message>
     <message>
         <location filename="../src/session-widgets/userloginwidget.cpp" line="255"/>
         <source>Please enter the password</source>
-        <translation type="unfinished"/>
+        <translation>Proszę podaj hasło</translation>
     </message>
     <message numerus="yes">
         <location filename="../src/session-widgets/userloginwidget.cpp" line="333"/>
         <source>Please try again %n minute(s) later</source>
-        <translation><numerusform>Spróbuj ponownie za %n minutę później</numerusform><numerusform>Spróbuj ponownie za %n minut później</numerusform><numerusform>Spróbuj ponownie za %n minut później</numerusform><numerusform>Spróbuj ponownie za %n minut później</numerusform></translation>
+        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
 </context>
 </TS>

@@ -98,7 +98,7 @@
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="596"/>
         <source>Switch system</source>
-        <translation type="unfinished"/>
+        <translation>Cambia Sistema</translation>
     </message>
 </context>
 <context>
@@ -111,7 +111,7 @@
     <message>
         <location filename="../src/lightdm-deepin-greeter/greeterworkek.cpp" line="311"/>
         <source>The account or password is not correct. Please enter again.</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;account o la password non sono corretti. Riprova per cortesia.</translation>
     </message>
 </context>
 <context>
@@ -168,7 +168,7 @@
     <message>
         <location filename="../src/dde-shutdown/view/multiuserswarningview.cpp" line="133"/>
         <source>The above users are still logged in and data will be lost due to reboot, are you sure you want to reboot?</source>
-        <translation>Gli utenti sopra indicati sono oggati ed i dati andranno persi col riavvio, sicuro di voler riavviare?</translation>
+        <translation>Gli utenti sopra indicati sono loggati ed i dati andranno persi col riavvio, sicuro di voler riavviare?</translation>
     </message>
 </context>
 <context>
@@ -279,7 +279,7 @@
     <message numerus="yes">
         <location filename="../src/session-widgets/userloginwidget.cpp" line="333"/>
         <source>Please try again %n minute(s) later</source>
-        <translation><numerusform>Riprova tra %n minuto(i)</numerusform><numerusform>Riprova tra %n minuto(i)</numerusform></translation>
+        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
 </context>
 </TS>

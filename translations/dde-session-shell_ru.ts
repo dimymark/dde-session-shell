@@ -61,7 +61,7 @@
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="389"/>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="581"/>
         <source>Hibernate</source>
-        <translation>Спящий Режим</translation>
+        <translation>Спящий режим</translation>
     </message>
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="391"/>
@@ -98,7 +98,7 @@
     <message>
         <location filename="../src/dde-shutdown/view/contentwidget.cpp" line="596"/>
         <source>Switch system</source>
-        <translation type="unfinished"/>
+        <translation>Переключить систему</translation>
     </message>
 </context>
 <context>
@@ -111,7 +111,7 @@
     <message>
         <location filename="../src/lightdm-deepin-greeter/greeterworkek.cpp" line="311"/>
         <source>The account or password is not correct. Please enter again.</source>
-        <translation type="unfinished"/>
+        <translation>учетная запись или пароль введены неверно. Пожалуйста, попробуйте снова</translation>
     </message>
 </context>
 <context>
@@ -194,7 +194,7 @@
         <location filename="../src/widgets/shutdownwidget.cpp" line="32"/>
         <location filename="../src/widgets/shutdownwidget.cpp" line="115"/>
         <source>Hibernate</source>
-        <translation>Спящий Режим</translation>
+        <translation>Спящий режим</translation>
     </message>
 </context>
 <context>
@@ -279,7 +279,7 @@
     <message numerus="yes">
         <location filename="../src/session-widgets/userloginwidget.cpp" line="333"/>
         <source>Please try again %n minute(s) later</source>
-        <translation><numerusform>Пожалуйста попробуйте снова через %n минут(у)</numerusform><numerusform>Пожалуйста попробуйте снова через %n минут(у)</numerusform><numerusform>Пожалуйста попробуйте снова через %n минут(у)</numerusform><numerusform>Пожалуйста попробуйте снова через %n минут(у)</numerusform></translation>
+        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
 </context>
 </TS>
