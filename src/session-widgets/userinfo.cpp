@@ -270,6 +270,7 @@ NativeUser::NativeUser(const QString &path, QObject *parent)
     connect(m_userInter, &UserInter::HistoryLayoutChanged, this, &NativeUser::kbLayoutListChanged);
     connect(m_userInter, &UserInter::LayoutChanged, this, &NativeUser::currentKBLayoutChanged);
     connect(m_userInter, &UserInter::NoPasswdLoginChanged, this, &NativeUser::noPasswdLoginChanged);
+    connect(m_userInter, &UserInter::PasswordStatusChanged, this, &NativeUser::passwordStatusChanged);
 
     m_userName = m_userInter->userName();
     m_uid = m_userInter->uid().toInt();

@@ -62,6 +62,7 @@ void UserLoginInfo::setUser(std::shared_ptr<User> user)
     m_currentUserConnects << connect(user.get(), &User::kbLayoutListChanged, m_userLoginWidget, &UserLoginWidget::updateKBLayout, Qt::UniqueConnection);
     m_currentUserConnects << connect(user.get(), &User::currentKBLayoutChanged, m_userLoginWidget, &UserLoginWidget::setDefaultKBLayout, Qt::UniqueConnection);
     m_currentUserConnects << connect(user.get(), &User::noPasswdLoginChanged, this, &UserLoginInfo::updateLoginContent);
+    m_currentUserConnects << connect(user.get(), &User::passwordStatusChanged, this, &UserLoginInfo::updateLoginContent);
 
     m_user = user;
 

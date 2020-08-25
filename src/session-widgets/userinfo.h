@@ -37,6 +37,7 @@ signals:
     void currentKBLayoutChanged(const QString &layout);
     void lockChanged(bool lock);
     void noPasswdLoginChanged(bool no_passw);
+    void passwordStatusChanged(const QString &value);
 
 public:
     bool operator==(const User &user) const;
