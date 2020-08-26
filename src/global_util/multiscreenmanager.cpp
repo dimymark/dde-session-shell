@@ -53,7 +53,7 @@ void MultiScreenManager::onMonitorsChanged(const QList<QDBusObjectPath> & mons)
     qDebug() << mons.size();
     QList<QString> pathList;
     QList<Monitor *> monitors;
-    Monitor *primaryMonitor;
+    Monitor *primaryMonitor = nullptr;
     for (const auto op : mons) {
         const QString path = op.path();
         pathList << path;
@@ -68,7 +68,8 @@ void MultiScreenManager::onMonitorsChanged(const QList<QDBusObjectPath> & mons)
             monitors << monitor;
         }
     }
-    monitors << primaryMonitor;
+    if(primaryMonitor != nullptr)
+         monitors << primaryMonitor;
 
     // 主屏最后new，保证多屏复制模式下显示在最上面，wayland环境下，widget->raise()函数不生效
     for (Monitor *mon : monitors) {
