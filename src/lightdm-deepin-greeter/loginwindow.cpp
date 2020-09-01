@@ -35,7 +35,7 @@ LoginWindow::LoginWindow(SessionBaseModel *const model, QWidget *parent)
 {
     QTimer::singleShot(0, this, [ = ] {
         auto user = model->currentUser();
-        if (user != nullptr) updateBackground(QPixmap("/home/" + user->name() + "/.cache/dde-preload/blur-images/1.jpg"));
+        if (user != nullptr) updateBackground(user->greeterBackgroundPath());
     });
 
     setContent(m_loginContent);
