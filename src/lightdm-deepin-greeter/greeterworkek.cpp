@@ -315,7 +315,9 @@ void GreeterWorkek::authenticationComplete()
 
     m_authenticating = false;
 
-    emit m_model->authFinished(m_greeter->isAuthenticated());
+    QTimer::singleShot(3000, this, [ = ] {
+        emit m_model->authFinished(m_greeter->isAuthenticated());
+    });
 
     if (!m_greeter->isAuthenticated()) {
         if (m_password.isEmpty()) {
@@ -371,7 +373,7 @@ void GreeterWorkek::authenticationComplete()
     if (m_firstTimeLogin) {m_firstTimeLogin = false;}
 
 #ifndef DISABLE_LOGIN_ANI
-    QTimer::singleShot(1000, this, startSessionSync);
+    QTimer::singleShot(4000, this, startSessionSync);
 #else
     startSessionSync();
 #endif
