@@ -43,7 +43,6 @@ LockWorker::LockWorker(SessionBaseModel *const model, QObject *parent)
     });
 
     connect(model, &SessionBaseModel::lockChanged, this, &LockWorker::authStatusChanged);
-    connect(model, &SessionBaseModel::activeAuthChanged, this, &LockWorker::authStatusChanged);
     connect(model, &SessionBaseModel::onPowerActionChanged, this, [ = ](SessionBaseModel::PowerAction poweraction) {
         switch (poweraction) {
         case SessionBaseModel::PowerAction::RequireSuspend:

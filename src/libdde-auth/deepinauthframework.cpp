@@ -40,8 +40,13 @@ void DeepinAuthFramework::keyBoardAuth()
         m_keyboard = new AuthAgent(AuthAgent::Keyboard, this);
         m_keyboard->SetUser(USER->name());
 
-        if (USER->isNoPasswdGrp() || (!USER->isNoPasswdGrp() && !PASSWORD.isEmpty())) {
-            qDebug() << Q_FUNC_INFO << "keyboard auth start";
+        if(m_type == AuthType::LightdmType) {
+            if (USER->isNoPasswdGrp() || (!USER->isNoPasswdGrp() && !PASSWORD.isEmpty())) {
+                qDebug() << Q_FUNC_INFO << "keyboard auth start: " << m_type;
+                QTimer::singleShot(100, m_keyboard, &AuthAgent::Authenticate);
+            }
+        } else {
+            qDebug() << Q_FUNC_INFO << "keyboard auth start: " << m_type;
             QTimer::singleShot(100, m_keyboard, &AuthAgent::Authenticate);
         }
     }
