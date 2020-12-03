@@ -110,7 +110,7 @@ void UserLoginWidget::setFaildMessage(const QString &message, SessionBaseModel::
     }
 
     m_passwordEdit->lineEdit()->clear();
-    m_passwordEdit->lineEdit()->setPlaceholderText(message);
+    m_passwordEdit->lineEdit()->setPlaceholderText(translateMessage(message));
     qDebug() << "message" << message;
     m_passwordEdit->lineEdit()->update();
 }
@@ -723,6 +723,29 @@ void UserLoginWidget::updateClipPath()
     path.lineTo (0, rc.height() - iRadius);
     path.lineTo (0, 0);
     m_kbLayoutClip->setClipPath (path);
+}
+
+/**
+ * @brief 针对https://pms.uniontech.com/zentao/bug-view-54969.html特殊处理
+ * 
+ * @param message 
+ * @return QString 
+ */
+QString UserLoginWidget::translateMessage(const QString &message)
+{
+    if (message.startsWith("You have been logged on using cached credentials")) {
+        return u8"使用缓存信息登录";
+    } else if (message.startsWith("Password will expire in")) {
+        QString strExpire = u8"密码将在%1天后过期";
+        QString strCopy = message;
+        int iExpire = 0;
+        strCopy = strCopy.remove(0, 23);
+        strCopy = strCopy.replace("days", "");
+        strCopy = strCopy.trimmed();
+        iExpire = strCopy.toInt();
+        return QString(u8"密码将在%1天后过期").arg(iExpire);
+    }
+    return message;
 }
 
 void UserLoginWidget::hidePasswordEditMessage()

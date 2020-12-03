@@ -134,6 +134,8 @@ private:
     void updatePowerAction();
     void resetPowerIcon();
     void updateClipPath();
+    //针对https://pms.uniontech.com/zentao/bug-view-54969.html特殊处理
+    QString translateMessage(const QString &message);
 
 private:
     DBlurEffectWidget *m_blurEffectWidget;         //阴影窗体
