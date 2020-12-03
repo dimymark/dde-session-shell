@@ -184,6 +184,9 @@ void UserLoginWidget::updateUI()
     }
     case NormalType: {
         m_passwordEdit->setVisible(!m_isLock);
+        if (m_passwordEdit->isVisible()) {
+            m_passwordEdit->lineEdit()->setPlaceholderText(tr("Please enter the password"));
+        }
         m_lockButton->show();
         m_nameLbl->show();
         m_lockPasswordWidget->setVisible(m_isLock);
