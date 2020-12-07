@@ -22,7 +22,8 @@ Build-Depends: debhelper (>= 8.0.0), pkg-config,
  libxrandr-dev,
  libdtkcore5-bin,
  libwayland-dev,
- qtbase5-private-dev
+ qtbase5-private-dev,
+ qtmultimedia5-dev
 Standards-Version: 3.9.4
 Homepage: http://www.deepin.org/
 
