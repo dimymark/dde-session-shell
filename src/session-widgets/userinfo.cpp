@@ -175,16 +175,19 @@ void User::onLockTimeOut()
     } else if (min >= 1) {
         m_lockNum = 2;
         m_lockTimer->start();
-    } else {
+    } else if (min == 0){
         m_lockNum = 3;
         m_lockTimer->start();
+
+        QJsonObject userValue;
+        userValue.insert("isLock", m_isLock);
+        userValue.insert("startTime", int(time(nullptr)));
+
+        userInfoRecordOperate(true, userValue);
+    } else {
+        qDebug() << "Time is negative, can't be here!";
     }
 
-    QJsonObject userValue;
-    userValue.insert("isLock", m_isLock);
-    userValue.insert("startTime", int(time(nullptr)));
-
-    userInfoRecordOperate(true, userValue);
 
     emit lockChanged(m_tryNum == 0);
 }
