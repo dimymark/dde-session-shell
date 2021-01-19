@@ -25,6 +25,7 @@ public:
     void register_for_mutil_monitor(std::function<QWidget* (Monitor *)> function);
     void startRaiseContentFrame();
     void onMonitorsChanged(const QList<QDBusObjectPath> & mons);
+    void hideAllFullScreen();
 private:
     void raiseContentFrame();
     Monitor *monitorAdded(const QString &path);

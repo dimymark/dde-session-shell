@@ -52,6 +52,17 @@ inline bool screenGeometryValid(const QRect &rect)
     return rect.width() > 1 && rect.height() > 1;
 }
 
+void MultiScreenManager::hideAllFullScreen()
+{
+    if (m_model == nullptr || m_model->isShow()) {
+        return;
+    }
+    qDebug() << "MultiScreenManager::hideAllFullScreen";
+    for (auto it = m_frameMoniter.constBegin(); it != m_frameMoniter.constEnd(); ++it) {
+        it.value()->hide();
+    }
+}
+
 void MultiScreenManager::raiseContentFrame()
 {
     if (m_model == nullptr || !m_model->isShow()) {
@@ -112,17 +123,21 @@ void MultiScreenManager::raiseContentFrame()
     for (auto it = m_frameMoniter.constBegin(); it != m_frameMoniter.constEnd(); ++it) {
         Monitor *monitor = it.key();
         const auto& geometry = monitor->rect();
+        qDebug() << "MultiScreenManager::raiseContentFrame, info" << it.key()->name() << geometry << it.value()->geometry();
         if (!monitor->enable()) {
             it.value()->hide();
+            qDebug() << "MultiScreenManager::raiseContentFrame, hide1 enable" << it.key()->name() << it.value()->geometry();
             continue;
         }
         if (!screenGeometryValid(geometry)) {
             it.value()->hide();
+            qDebug() << "MultiScreenManager::raiseContentFrame, hide2 invalid" << it.key()->name() << it.value()->geometry();
             continue;
         }
 
         if (rect2Count[geometry] == 1) {
             it.value()->show();
+            qDebug() << "MultiScreenManager::raiseContentFrame, show0" << it.key()->name() << it.value()->geometry();
             continue;
         }
 
@@ -130,8 +145,10 @@ void MultiScreenManager::raiseContentFrame()
         if (contentVisibleScreen->rect() == geometry) {
             if (it.key() == contentVisibleScreen) {
                 it.value()->show();
+                qDebug() << "MultiScreenManager::raiseContentFrame, show1" << it.key()->name() << it.value()->geometry();
             } else {
                 it.value()->hide();
+                qDebug() << "MultiScreenManager::raiseContentFrame, hide3 override" << it.key()->name() << it.value()->geometry();
             }
         } else {
             //只显示第一个
@@ -141,12 +158,14 @@ void MultiScreenManager::raiseContentFrame()
                 Monitor* monSavePos = itFind.value();
                 if (!monSavePos->enable() || !bShow) {
                     m_frameMoniter[itFind.value()]->hide();
+                    qDebug() << "MultiScreenManager::raiseContentFrame, hide4 override" << it.key()->name() << it.value()->geometry();
                     ++itFind;
                     continue;
                 }
                 if (bShow) {
                     bShow = false;
                     m_frameMoniter[itFind.value()]->show();
+                    qDebug() << "MultiScreenManager::raiseContentFrame, show2" << it.key()->name() << it.value()->geometry();
                 }
                 ++itFind;
             }
@@ -154,6 +173,7 @@ void MultiScreenManager::raiseContentFrame()
         }
     }
 
+    qWarning() << "MultiScreenManager::raiseContentFrame, contentVisible" << contentVisibleScreen->name() << contentVisibleScreen->rect();
     m_frameMoniter[contentVisibleScreen]->setProperty("contentVisible", QVariant(true));
 }
 

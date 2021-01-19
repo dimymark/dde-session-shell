@@ -146,6 +146,7 @@ int main(int argc, char *argv[])
     multi_screen_manager.setSessionBaseModel(model);
     multi_screen_manager.register_for_mutil_monitor(createFrame);
 
+    QObject::connect(model, &SessionBaseModel::visibleChanged, &multi_screen_manager, &MultiScreenManager::hideAllFullScreen);
     QObject::connect(model, &SessionBaseModel::visibleChanged, &multi_screen_manager, &MultiScreenManager::startRaiseContentFrame);
 
     QDBusConnection conn = QDBusConnection::sessionBus();

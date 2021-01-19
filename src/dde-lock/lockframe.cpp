@@ -71,7 +71,6 @@ LockFrame::LockFrame(SessionBaseModel *const model, QWidget *parent)
     connect(m_content, &LockContent::unlockActionFinish,this, [ = ]() {
         Q_EMIT requestEnableHotzone(true);
         m_model->setIsShow(false);
-        hide();
     });
     connect(model, &SessionBaseModel::authFinished, this, [ = ](bool success){
         syslog(LOG_INFO, "zl: SessionBaseModel::authFinished %d -- success status %d: ", __LINE__, success);
